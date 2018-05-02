@@ -17,6 +17,10 @@ for (var i = 0; i < descriptions.length; i++) {
 			console.log(num);
 			sceneEl.querySelector('#texty').setAttribute('value', descriptions[ind]);
 		});
+		els.addEventListener('mouseleave', function () {
+			console.log("mouseleave");
+			sceneEl.querySelector('#texty').setAttribute('value', "");
+		});
 		num++;
 
 	  }
